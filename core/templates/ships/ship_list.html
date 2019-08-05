@@ -1,0 +1,21 @@
+<html>
+<body>
+<h1>Ships List</h1>
+
+    {%  block content %}
+        {%  for i in object_list %}
+             <div>
+                    <h2>{{ i.name }}</h2>
+                 <hr>
+
+
+
+                    <h2>{{ i.breadth }}</h2>
+                    <h2>{{ i.length }}</h2>
+                    <h2>{{ i.owner }}</h2>
+             </div>
+        {% endfor %}
+    {% endblock %}
+
+</body>
+</html>
